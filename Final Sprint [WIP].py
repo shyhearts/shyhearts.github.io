@@ -69,7 +69,8 @@ def main():
                     slope_answer = slope(x1, x2, y1, y2)
                     print('The slope is ', slope_answer)
                     
-                    # following variable is for the user to choose if they want to make another slope calculation.
+                    # following variable is for the user to choose 
+                    # if they want to make another slope calculation.
                     user_choice_slope = input('Would you like to calculate slope again? ')
                     retry_slope = user_choice_slope.lower() #turn input to lowercase
                     if retry_slope == 'yes':
@@ -88,11 +89,16 @@ def main():
                     user_volume_selection = int(input())
                     if user_volume_selection == 1:
                         print('You chose to calculate volume for a rectangular prism')
-                        rectangle_length = int(input('Enter the length of the rectangular prism: '))
-                        rectangle_width = int(input('Enter the width of the rectangular prism: '))
-                        rectangle_height = int(input('Enter the height of the rectangular prism: '))
-                        answer_volume_rectangular_prism = volume_rectangular_prism(rectangle_length, rectangle_width, rectangle_height)
-                        print('The volume for your rectangular prism is ', answer_volume_rectangular_prism)
+                        rectangle_length = int(
+                            input('Enter the length of the rectangular prism: '))
+                        rectangle_width = int(
+                            input('Enter the width of the rectangular prism: '))
+                        rectangle_height = int(
+                            input('Enter the height of the rectangular prism: '))
+                        answer_volume_rectangular = volume_rectangular_prism(rectangle_length, 
+                                                                                   rectangle_width, rectangle_height)
+                        print('The volume for your rectangular prism is ',
+                              answer_volume_rectangular)
                         
                         user_retry_volume_choice = input('Do you want to calculating volumes again? ')
                         retry_volumes_choice = user_retry_volume_choice.lower() #turn input to lowercase
@@ -198,3 +204,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
