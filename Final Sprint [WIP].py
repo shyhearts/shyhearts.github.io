@@ -10,7 +10,7 @@ def slope(x_1,y_1,x_2,y_2):
     a = y_2 - y_1
     b = x_2 - x_1
     c = a / b
-    return c
+    return
 
 def volume_rectangular_prism(l,w,h):
     volume_for_rectangular_prism = l*w*h
@@ -38,18 +38,13 @@ def main():
     name = input('Enter your name: ')
     print(f'Hello, {name}! Welcome to my integration project #3.')
     program_continuation = 'yes'
-    while program_continuation == 'yes':
+    while program_continuation == 'yes': #change the selection
         print('What do you wish to review during this session?')
-        print('1. ...')
-        print('2. Calculations')
-        print('3. Exit program')
+        print('1. Calculations')
+        print('2. Exit program')
         user_choice = int(input())
 
         if user_choice == 1:
-            print('You chose to review ...')
-            # revisit
-
-        elif user_choice == 2:
             print('You chose to review Calculations.')
             print('Which calculation do you wish to perform?')
             print('1. Slope')
@@ -192,7 +187,7 @@ def main():
                     elif user_area_selection == 4:
                         retry_areas = 'no'
         
-        elif user_choice == 3:
+        elif user_choice == 2:
             print(f'Thank you for reviewing my project, {name}.')
             time.sleep(2)
             print('Exiting program...')
@@ -204,4 +199,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
