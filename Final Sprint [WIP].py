@@ -6,6 +6,14 @@
 import time
 import math
 
+def valid_argument(user_input): #find a way to use this for every choice involving numbers
+    valid_input = False
+    if valid_imput == True
+    try:
+        user_input_choice = int(input())
+    except ValueError:
+        print('Invalid selection.')
+
 def slope(x_1,y_1,x_2,y_2):
     a = y_2 - y_1
     b = x_2 - x_1
@@ -38,8 +46,8 @@ def main():
     name = input('Enter your name: ')
     print(f'Hello, {name}! Welcome to my integration project #3.')
     program_continuation = 'yes'
-    while program_continuation == 'yes': #change the selection
-        print('What do you wish to review during this session?')
+    while program_continuation == 'yes':
+        print('Select what you wish to do')
         print('1. Calculations')
         print('2. Exit program')
         user_choice = int(input())
