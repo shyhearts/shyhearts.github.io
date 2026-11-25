@@ -45,16 +45,16 @@ def main():
         try:
             program_continuation = 'yes'
             while program_continuation == 'yes':
-                print('Select what you wish to do.')
+                print('Select what you wish to do')
                 print('1. Calculations')
                 print('2. Exit program')
                 user_choice = int(input())
                 user_input = True
 
                 if user_choice == 1:
+                    print('You chose to review Calculations.')
                     program_calculations = 'yes'
                     while program_calculations == 'yes':
-                        print('You chose to review Calculations.')
                         print('Which calculation do you wish to perform?')
                         print('1. Volume ')
                         print('2. Area')
@@ -62,9 +62,10 @@ def main():
                         user_calculation_selection = int(input())
 
                         if user_calculation_selection == 1:
-                            print('Which of the following volumes do you want to calculate?')
+
                             retry_volumes = 'yes'
                             while retry_volumes == 'yes':
+                                print('Which of the following volumes do you want to calculate?')
                                 print('1. Rectangular Prism')
                                 print('2. Cylinder')
                                 print('3. Pyramid')
@@ -83,7 +84,7 @@ def main():
                                                                                          rectangle_width, rectangle_height)
                                     print('The volume for your rectangular prism is ',
                                           answer_volume_rectangular)
-                                    
+
                                     user_retry_volume_choice = input(
                                         'Do you want to calculate volumes again? ')
                                     retry_volumes = user_retry_volume_choice.lower()
@@ -140,9 +141,10 @@ def main():
 
 
                         elif user_calculation_selection == 2:
-                            print('Which of the following areas do you want to calculate?')
+
                             retry_areas = 'yes'
                             while retry_areas == 'yes':
+                                print('Which of the following areas do you want to calculate?')
                                 print('1. Circle')
                                 print('2. Triangle')
                                 print('3. Rectangle')
