@@ -45,7 +45,7 @@ def main():
         try:
             program_continuation = 'yes'
             while program_continuation == 'yes':
-                print('Select what you wish to do')
+                print('Select what you wish to do.')
                 print('1. Calculations')
                 print('2. Exit program')
                 user_choice = int(input())
