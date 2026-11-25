@@ -60,9 +60,8 @@ def main():
                         print('2. Area')
                         print('3. Exit')
                         user_calculation_selection = int(input())
-
+                        
                         if user_calculation_selection == 1:
-
                             retry_volumes = 'yes'
                             while retry_volumes == 'yes':
                                 print('Which of the following volumes do you want to calculate?')
